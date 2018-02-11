@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:background="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/pro_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="14dp"
+        android:text="박서완"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/pro_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pro_name"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:text="선린인터넷고등학교"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:inputType="textShortMessage"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_below="@id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#3d3d3d"
+            android:textSize="14sp"
+            android:text="휴대전화 번호"/>
+
+        <EditText
+            android:id="@+id/pro_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="010-5448-0790"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:layout_marginBottom="24dp"
+            android:inputType="textShortMessage"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#3d3d3d"
+            android:textSize="14sp"
+            android:text="생년월일"/>
+
+        <EditText
+            android:id="@+id/pro_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2001년 9월 26일"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp"
+            android:inputType="textShortMessage"
+            android:enabled="false"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/change_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:shadowRadius="30.0"
+            android:textSize="15sp"
+            android:text="수정"
+            android:onClick="onClick"
+            android:shadowColor="#00ffffff"
+            android:background="#ffffffff"/>
+    </LinearLayout>
+
+</RelativeLayout>
